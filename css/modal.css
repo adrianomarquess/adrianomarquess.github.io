@@ -1,0 +1,14 @@
+.modal {
+  max-width: 100%;
+}
+
+.modal > img {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.modal > img.mobile {
+  width: 60%;
+}

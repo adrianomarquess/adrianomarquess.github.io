@@ -16,7 +16,36 @@
   height: 200px;
   border-radius: 10px;
   margin-bottom: 20px;
-  background-color: #e9e9e9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs ul li#safishare {
+  background-color: #3d3d3d;
+}
+
+.jobs ul li#yobib {
+  background-color: #3bb3e3;
+}
+
+.jobs ul li#profitnet {
+  background-color: #fd7e23;
+}
+
+.jobs ul li a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.jobs ul li a img {
+  width: 100%;
+  height: auto;
 }
 
 .jobs ul li:last-child {

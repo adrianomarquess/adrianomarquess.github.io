@@ -18,6 +18,12 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <link rel="stylesheet" href="./css/modal.css">
 </head>
 
 <body>
@@ -29,7 +35,7 @@
 
           <ul>
             <li>
-              <a href="mailto:adrianomfpassos@gmail.com?subject=#ContatoSite: ">
+              <a href="mailto:adrianomfpassos@gmail.com?subject=Olá, Adriano!">
                 <img src="./images/mail.svg" alt="E-mail do Adriano Marques">
               </a>
             </li>
@@ -145,12 +151,21 @@
         <h1>Meus trabalhos recentes</h1>
 
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li id="safishare">
+            <a href="#safishare-modal" rel="modal:open">
+              <img src="./jobs/logos/safishare.svg" alt="Safishare">
+            </a>
+          </li>
+          <li id="yobib">
+            <a href="#yobib-modal" rel="modal:open">
+              <img src="./jobs/logos/yobib.png" alt="Yobib">
+            </a>
+          </li>
+          <li id="profitnet">
+            <a href="#profitnet-modal" rel="modal:open">
+              <img src="./jobs/logos/profitnet.png" alt="Profit Net">
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -168,6 +183,18 @@
       <img src="./images/logo-small.svg" alt="AM">
     </footer>
   </main>
+
+  <div id="safishare-modal" class="modal">
+    <img class="mobile" src="./jobs/safishare.png" alt="Safishare Project">
+  </div>
+
+  <div id="yobib-modal" class="modal">
+    <img src="./jobs/yobib.png" alt="Yobib Project">
+  </div>
+
+  <div id="profitnet-modal" class="modal">
+    <img src="./jobs/profitnet.png" alt="Profit Net Project">
+  </div>
 
   <script src="./js/app.js"></script>
 </body>
