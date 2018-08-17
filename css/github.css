@@ -24,16 +24,6 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 800px) {
-  .github ul li {
-    transition: transform 0.2s;
-  }
-
-  .github ul li:hover {
-    transform: translateX(5px);
-  }
-}
-
 .github ul li a {
   display: flex;
   flex-direction: row;
@@ -75,4 +65,18 @@
   width: 10px;
   height: auto;
   margin-left: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .github ul li {
+    transition: transform 0.2s;
+  }
+
+  .github ul li:hover {
+    transform: translateX(5px);
+  }
+
+  .github ul {
+    margin-bottom: 50px;
+  }
 }
