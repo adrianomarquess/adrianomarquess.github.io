@@ -1,0 +1,71 @@
+@import 'colors';
+@import 'fonts';
+@import 'metrics';
+@import 'mixins';
+
+.contact {
+  > .container {
+    padding: 0;
+
+    @media only screen and (min-width: $desktop-small) {
+      padding: 0 10%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: $base-padding * 2;
+    }
+  }
+
+  .contact-form {
+    padding: 0 $base-padding;
+
+    @media only screen and (min-width: $desktop-small) {
+      padding: 0;
+      width: 49%;
+    }
+
+    h1 {
+      @include title;
+
+      @media only screen and (min-width: $desktop-small) {
+        margin: 0;
+        margin-bottom: $base-padding;
+        text-align: left;
+      }
+    }
+
+    span {
+      font-size: $fonts-medium;
+      color: $boulder;
+      line-height: 1em;
+    }
+
+    form {
+      margin: $base-padding 0;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: $desktop-small) {
+        .inline-inputs {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .input {
+            width: calc(50% - 10px);
+          }
+        }
+      }
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 300px;
+
+    @media only screen and (min-width: $desktop-small) {
+      width: 49%;
+      height: 497px;
+    }
+  }
+}

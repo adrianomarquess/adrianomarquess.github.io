@@ -3,7 +3,6 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 // const clean = require('gulp-clean');
 
-const scssFiles = 'scss/**/*.scss';
 const cssFiles = 'css';
 
 const sassDevOptions = {
@@ -20,7 +19,7 @@ const sassProdOptions = {
 
 gulp.task('sass:prod', function() {
   return gulp
-    .src(scssFiles)
+    .src('scss/styles.scss')
     .pipe(sass(sassProdOptions).on('error', sass.logError))
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest(cssFiles));
@@ -34,7 +33,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(scssFiles, gulp.series(['sass', 'sass:prod']));
+  gulp.watch('scss/**/*.scss', gulp.series(['sass', 'sass:prod']));
 });
 
 // Default task - Run with command 'gulp'

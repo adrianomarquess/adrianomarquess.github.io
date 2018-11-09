@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'fonts';
+@import 'metrics';
 
 * {
   margin: 0;
@@ -28,5 +29,45 @@ body {
 .container {
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 $base-padding;
+
+  @media only screen and (min-width: $desktop-small) {
+    padding: 0 10%;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  font-size: $fonts-regular;
+  color: $cod-gray;
+  background-color: $black-haze;
+  border: solid 1px $porcelain;
+  margin-bottom: $base-padding;
+  padding: 0 $base-padding;
+}
+
+textarea.input {
+  padding: $base-padding;
+  height: auto;
+  resize: none;
+
+  @media only screen and (min-width: $desktop-small) {
+    height: 200px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    height: 40px;
+    background-color: $buddha-gold;
+    border: none;
+    font-size: $fonts-regular;
+    font-weight: bold;
+    color: $white;
+    padding: 0 $base-padding * 2;
+  }
 }
