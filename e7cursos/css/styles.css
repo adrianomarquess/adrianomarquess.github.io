@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fed150;
+  height: 100px;
+}
+
+.header-top {
+  background-color: #d29d03;
+  height: 30px;
+}
+
+.header-top .container {
+  display: flex;
+  height: 100%;
+}
+
+.header-top ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.header-top ul .contact-whatsapp {
+  display: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .header-top ul .contact-whatsapp {
+    display: block;
+  }
+}
+
+.header-top ul .contact-email a {
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-top ul .contact-social {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header-top ul .contact-social a:nth-child(2) {
+  margin: 0 20px;
+}
+
+.header-top ul .contact-social a {
+  display: flex;
+  align-items: center;
+}
+
+.header-top ul .contact-social a > img {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 img {
+  width: 120px;
+  height: auto;
+}
+
+.header .hamburger {
+  padding: 0;
+}
+
+.header .hamburger:focus {
+  outline: 0;
+}
+
+.header .hamburger .hamburger-box {
+  width: 35px;
+}
+
+.header .hamburger .hamburger-box .hamburger-inner {
+  width: 35px;
+}
+
+.header .hamburger .hamburger-box .hamburger-inner::before, .header .hamburger .hamburger-box .hamburger-inner::after {
+  width: 35px;
+}
+
+.header .menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  background-color: #333;
+}
+
+.header .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.header .menu ul li a {
+  flex: 1;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  border-bottom: solid 0.5px #fff;
+}
+
+.header .menu ul li:first-child a {
+  padding-top: 15px;
+}
+
+.header .menu ul li:last-child a {
+  padding-bottom: 15px;
+  border-bottom: 0;
+}

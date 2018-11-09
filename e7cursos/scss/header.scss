@@ -1,0 +1,144 @@
+@import 'colors';
+@import 'fonts';
+
+$header-height: 100px;
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: $mustard;
+  height: $header-height;
+}
+
+.header-top {
+  background-color: $buddha-gold;
+  height: 30px;
+
+  .container {
+    display: flex;
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    .contact-whatsapp {
+      display: none;
+
+      @media only screen and (min-width: 750px) {
+        display: block;
+      }
+    }
+
+    .contact-email a {
+      font-size: $fonts-small;
+      color: $white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-social {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      a:nth-child(2) {
+        margin: 0 20px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      a > img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.header {
+  flex: 1;
+  display: flex;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 img {
+    width: 120px;
+    height: auto;
+  }
+
+  .hamburger {
+    padding: 0;
+
+    &:focus {
+      outline: 0;
+    }
+
+    .hamburger-box {
+      $hamburger-width: 35px;
+      width: $hamburger-width;
+
+      .hamburger-inner {
+        width: $hamburger-width;
+
+        &::before,
+        &::after {
+          width: $hamburger-width;
+        }
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: $header-height;
+    width: 100%;
+    background-color: $mine-shaft;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+
+      li a {
+        flex: 1;
+        font-weight: bold;
+        font-size: $fonts-regular;
+        padding: 10px 0;
+        color: $white;
+        display: block;
+        text-decoration: none;
+        border-bottom: solid 0.5px $white;
+      }
+
+      li:first-child {
+        a {
+          padding-top: 15px;
+        }
+      }
+
+      li:last-child {
+        a {
+          padding-bottom: 15px;
+          border-bottom: 0;
+        }
+      }
+    }
+
+    // @media only screen and (min-width: 750px) {
+    //   display: block;
+    // }
+  }
+}
