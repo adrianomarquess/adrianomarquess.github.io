@@ -172,6 +172,26 @@ $(document).ready(function() {
   getServices('courses').then(res => {
     $('.course-list').html(res);
   });
+
+  $('.menu a').on('click', function(event) {
+    const parent = $(this)
+      .parent()
+      .parent();
+
+    if ($(window).width() < 1024 && $(parent).attr('id') !== 'menu-footer') {
+      $('.menu-anchor').click();
+    }
+
+    const sectionToScroll = this.hash;
+
+    $('html, body').animate(
+      { scrollTop: $(sectionToScroll).offset().top - 140 },
+      700,
+      function() {
+        window.location.hash = sectionToScroll;
+      }
+    );
+  });
 });
 
 const hamburgers = document.getElementsByClassName('hamburger');
