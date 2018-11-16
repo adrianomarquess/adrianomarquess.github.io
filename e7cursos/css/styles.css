@@ -134,18 +134,12 @@ header {
   height: auto;
 }
 
-.header-top ul li.contact-whatsapp {
+.header-top ul .contact-email {
   display: none;
 }
 
 .header-top ul li.contact-whatsapp a > img {
   margin-right: 10px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .header-top ul li.contact-whatsapp {
-    display: flex;
-  }
 }
 
 .header-top ul li.contact-social {
@@ -158,6 +152,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .header-top li.contact-email {
+    display: flex;
     justify-content: center;
   }
 }

@@ -62,15 +62,13 @@ header {
       }
     }
 
-    li.contact-whatsapp {
+    .contact-email {
       display: none;
+    }
 
+    li.contact-whatsapp {
       a > img {
         margin-right: 10px;
-      }
-
-      @media only screen and (min-width: $desktop-small) {
-        display: flex;
       }
     }
 
@@ -85,6 +83,7 @@ header {
 
   @media only screen and (min-width: $desktop-small) {
     li.contact-email {
+      display: flex;
       justify-content: center;
     }
   }
