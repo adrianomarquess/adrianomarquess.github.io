@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./images/favicon/favicon-16.png" sizes="16x16" />
+    <link rel="icon" href="./images/favicon/favicon-32.png" sizes="32x32" />
+    <link rel="icon" href="./images/favicon/favicon-48.png" sizes="48x48" />
+    <link rel="icon" href="./images/favicon/favicon-64.png" sizes="64x64" />
+    <link rel="icon" href="./images/favicon/favicon-128.png" sizes="128x128" />
     <title>E7 Cursos</title>
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/hover-min.css" />
@@ -21,7 +26,7 @@
   </head>
   <body>
     <main>
-      <header>
+      <header id="home">
         <section class="header-top">
           <div class="container">
             <ul>
@@ -34,9 +39,9 @@
                 </a>
               </li>
               <li class="contact-email">
-                <a href="mailto:contato@e7cursos.com.br"
-                  >contato@e7cursos.com.br</a
-                >
+                <a href="mailto:contato@e7cursos.com.br">
+                  contato@e7cursos.com.br
+                </a>
               </li>
               <li class="contact-social">
                 <a href="https://www.facebook.com/e7cursos/" target="_blank">
@@ -68,10 +73,10 @@
 
             <nav class="menu">
               <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#whoare">Quem somos</a></li>
+                <li><a href="#contact">Contato</a></li>
               </ul>
             </nav>
           </div>
@@ -109,7 +114,7 @@
         </div>
       </header>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <ul class="filter-list">
             <li>
@@ -133,7 +138,7 @@
         </div>
       </section>
 
-      <section class="who-we-are">
+      <section class="who-we-are" id="whoare">
         <div class="container">
           <h1>Quem somos</h1>
           <p>
@@ -161,7 +166,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <section class="contact-form">
             <h1>Contato</h1>
@@ -221,6 +226,62 @@
           </section>
 
           <div id="map" class="map"></div>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="container">
+          <div>
+            <img src="./images/logo-small.jpg" alt="E7 Cursos" class="logo" />
+          </div>
+
+          <div class="footer-section explore">
+            <h1>Explore</h1>
+            <ul class="menu" id="menu-footer">
+              <li><a href="#home">Início</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#whoare">Quem somos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-section visit">
+              <h1>Faça uma visita</h1>
+              <address>Rua Massao Yamamoto, 45</address>
+              <address>Jandira - SP</address>
+            </div>
+
+            <div class="footer-section contacts">
+              <h1>Contatos</h1>
+              <a href="mailto:contato@e7cursos.com.br"
+                >contato@e7cursos.com.br</a
+              >
+              <a
+                href="whatsapp://send?text=Olá, tudo bem? Gostaria de saber mais sobre a E7 Cursos.&phone=+5511963121611"
+              >
+                (11) 96312-1611
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section social">
+            <h1>Redes Sociais</h1>
+            <a href="https://www.facebook.com/e7cursos/" target="_blank">
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/e7cursos/" target="_blank">
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/company/e7-cursos/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <p class="copy">&copy;2018 E7 Cursos. Todos os direitos reservados</p>
         </div>
       </section>
     </main>

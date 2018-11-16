@@ -61,42 +61,40 @@ const services = {
       thumbnail: 'Brigada de Incêndio',
       title: 'BRIGADA DE INCÊNDIO',
       description:
-        'Course description test Course description test Course description test',
+        'Treinamento com objetivo de habilitar pessoas realizar atendimento em situação de emergência',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     },
     {
       thumbnail: 'Primeiros Socorros',
       title: 'PRIMEIROS SOCORROS',
       description:
-        'Course description test Course description test Course description test',
+        'Treinamento com finalidade de capacitar pessoas a prestar os primeiros socorros',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     },
     {
       thumbnail: 'Treinamento CIPA',
       title: 'TREINAMENTO CIPA',
       description:
-        'Course description test Course description test Course description test',
+        'Treinamento para formação de membros para Comissão Interna de Prevenção de Acidentes',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     },
     {
       thumbnail: 'PCMAT',
       title: 'PCMAT',
       description:
-        'Course description test Course description test Course description test',
+        'Programa de Condições e Meio Ambiente de Trabalho na Indústria na Construção Civil',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     },
     {
       thumbnail: 'PCMSO',
       title: 'PCMSO',
-      description:
-        'Course description test Course description test Course description test',
+      description: 'Programa de Controle Médico de Saúde Ocupacional',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     },
     {
       thumbnail: 'PPRA',
       title: 'PPRA',
-      description:
-        'Course description test Course description test Course description test',
+      description: 'Programa de Prevenção de Riscos Ambientais',
       html_url: 'https://www.hotmart.com/pt/hotpay/'
     }
   ],
@@ -171,6 +169,26 @@ $(document).ready(function() {
 
   getServices('courses').then(res => {
     $('.course-list').html(res);
+  });
+
+  $('.menu a').on('click', function(event) {
+    const parent = $(this)
+      .parent()
+      .parent();
+
+    if ($(window).width() < 1024 && $(parent).attr('id') !== 'menu-footer') {
+      $('.menu-anchor').click();
+    }
+
+    const sectionToScroll = this.hash;
+
+    $('html, body').animate(
+      { scrollTop: $(sectionToScroll).offset().top - 140 },
+      700,
+      function() {
+        window.location.hash = sectionToScroll;
+      }
+    );
   });
 });
 
