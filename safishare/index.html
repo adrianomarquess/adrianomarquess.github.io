@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Safishare</title>
+    <link rel="stylesheet" href="./css/hamburger.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="header-left">
+          <div class="hamburguer-wrapper">
+            <button class="menu-anchor hamburger hamburger--spin" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <h1>
+            <input type="file" name="file" id="file" class="inputfile" />
+            <label for="file">Contabilidade personalizada</label>
+          </h1>
+        </div>
+
+        <div class="header-right">
+          <img src="./images/search.svg" alt="Search" />
+
+          <div class="notifications-wrapper">
+            <div class="notifications-badge"></div>
+            <img src="./images/notifications.svg" alt="Notifications" />
+          </div>
+
+          <div class="user-wrapper">
+            <div class="user-info">
+              <h1 class="user-name">Danilo Parreira</h1>
+              <h2 class="user-company">lowcost</h2>
+            </div>
+
+            <div class="user-image-wrapper">
+              <img src="./images/user.svg" alt="Image profile" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <aside class="menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/home.svg" alt="Home" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/add.svg" alt="Add" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/folder.svg" alt="Folder" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/data.svg" alt="Data" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="main">
+        <div class="content">
+          <header class="main-header">
+            <img src="./images/view-dashboard.svg" alt="View dashboard" />
+            <img src="./images/view-list.svg" alt="View list" />
+          </header>
+
+          <section class="painel">
+            <div class="content-painel">
+              <div>
+                <header class="content-painel-header">
+                  <h1>Controle de Tarefas do Contador</h1>
+                  <h2>Documentos que o contador deve enviar ao cliente</h2>
+                </header>
+
+                <canvas id="firstChart"></canvas>
+                <table class="table-main" id="first-table">
+                  <thead>
+                    <th>Cliente</th>
+                    <th>Total de Tarefas</th>
+                    <th>Tarefas Pendentes</th>
+                    <th>Tarefas Concluídas</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="link-chart-details">
+                <a href="#" class="toggle-chart1-to-table"
+                  >Clique para mais detalhes</a
+                >
+              </p>
+            </div>
+
+            <div class="content-painel">
+              <div>
+                <header class="content-painel-header">
+                  <h1>Protocolo de recebimento do Cliente</h1>
+                  <h2>Documentos recebidos, lidos e baixados pelo cliente</h2>
+                </header>
+
+                <canvas id="secondChart"></canvas>
+                <table class="table-main" id="second-table">
+                  <thead>
+                    <th>Cliente</th>
+                    <th>Docs Recebidos</th>
+                    <th>Docs Lidos</th>
+                    <th>Docs Baixados</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="link-chart-details">
+                <a href="#" class="toggle-chart2-to-table"
+                  >Clique para mais detalhes</a
+                >
+              </p>
+            </div>
+
+            <div class="content-painel">
+              <div>
+                <header class="content-painel-header">
+                  <h1>Controle de Documentos Recebidos pelo Contador</h1>
+                  <h2>Documentos enviados pelo cliente ao contador</h2>
+                </header>
+
+                <canvas id="thirdChart"></canvas>
+                <table class="table-main" id="third-table">
+                  <thead>
+                    <th>Cliente</th>
+                    <th>Total de Docs a Receber</th>
+                    <th>Docs Recebidos</th>
+                    <th>Recebimento Pendente</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>LOWCOST</td>
+                      <td>1</td>
+                      <td>32</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <p class="link-chart-details">
+                <a href="#" class="toggle-chart3-to-table"
+                  >Clique para mais detalhes</a
+                >
+              </p>
+            </div>
+          </section>
+
+          <section class="painel-clients">
+            <div class="content-painel-clients">
+              <header>
+                <h1>Administração de Clientes</h1>
+
+                <form>
+                  <div class="search-wrapper">
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Buscar"
+                    />
+                    <img src="./images/search-dark.svg" alt="Search client" />
+                  </div>
+                </form>
+                <img src="./images/add-dark.svg" alt="Add client" />
+              </header>
+
+              <div class="table-clients-wrapper">
+                <table class="table-clients">
+                  <thead>
+                    <th>Nome da empresa</th>
+                    <th>CNPJ</th>
+                    <th>Novos Docs Recebidos</th>
+                    <th>Gerenciar pastas do cliente</th>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Gerdau Aços</td>
+                      <td>16.270.654/0001-75</td>
+                      <td>1</td>
+                      <td>
+                        <a href="#">
+                          <img src="./images/user-edit.svg" alt="User edit" />
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

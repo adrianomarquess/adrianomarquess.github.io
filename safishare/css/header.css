@@ -1,0 +1,179 @@
+/* HEADER */
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.header .header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .header-left .hamburguer-wrapper {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 32px;
+}
+
+.header .header-left .hamburger {
+  padding: 0;
+}
+
+.header .header-left .hamburger:focus {
+  outline: 0;
+}
+
+.header .header-left .hamburger .hamburger-inner {
+  background-color: #5c9aff;
+}
+
+.hamburger:hover,
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+
+.hamburger-box {
+  width: 26px;
+  margin-top: 3px;
+}
+
+.hamburger-inner {
+  width: 26px;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 26px;
+  background-color: #5c9aff;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #5c9aff;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+.header .header-left h1 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header .header-left h1 .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* CUSTOM INPUT FILE */
+/*
+.header .header-left h1 .inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+*/
+
+/* CUSTOM INPUT FILE HOVER */
+/*
+.header .header-left h1 .inputfile:focus + label,
+.header .header-left h1 .inputfile + label:hover {
+  background-color: red;
+}
+*/
+
+.header .header-left h1 .inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+.header .header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.header .header-right img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header .header-right .notifications-wrapper {
+  position: relative;
+  margin-left: 32px;
+}
+
+.header .header-right .notifications-wrapper .notifications-badge {
+  width: 8px;
+  height: 8px;
+  background-color: #5c9aff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  top: -8px;
+  right: -4px;
+}
+
+.header .header-right .user-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 42px;
+}
+
+.header .header-right .user-wrapper .user-info {
+  text-align: right;
+}
+
+.header .header-right .user-wrapper .user-name {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #000;
+}
+
+.header .header-right .user-wrapper .user-company {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000;
+}
+
+.header .header-right .user-image-wrapper {
+  background-color: #dbdfe2;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}

@@ -1,0 +1,29 @@
+/*
+  BG: #f7f8fc
+  MENU: #5c9aff
+  HEADER ICONS: #dbdfe2
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f8fc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
